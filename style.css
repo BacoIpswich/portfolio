@@ -31,7 +31,7 @@ header > .interface{
 }
 
 header a{
-    color: #fff;
+    color: #5c5c5c;
     text-decoration: none;
 }
 
@@ -53,5 +53,5 @@ header .btn-contato button{
     border: 0;
     border-radius: 30px;
     cursor: pointer;
-    
+
 }
