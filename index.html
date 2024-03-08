@@ -12,32 +12,51 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- FIM BOORSTRAP ICONS -->
     <link rel="stylesheet" href="style.css">
-    <title>Oficina FLX</title>
+    <script src="menu.js" defer></script>
+    <title>BacoIpswich</title>
 </head>
 <body>
     <header>
-        <div class="interface">
+        <div class="interface" id="inicio">
             <div class="logo">
-                <a href="#">
+                <a href="#inicio">
                     <img src="image/logo (1).png" alt="">
                 </a>
             </div><!--Logo-->
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Especialidades</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#portfolio">Projetos</a></li>
                 </ul>
             </nav>
-
             <div class="btn-contato">
-                <a href="#">
+                <a href="#formulario">
                     <button>Contato</button>
                 </a>
             </div><!--btn-contato-->
-        </div><!--Interface-->
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div><!--btn-abrir-menu-->
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div><!--btn-fechar-->
+                <nav>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#especialidades">Especialidades</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#portfolio">Projetos</a></li>
+                        <li><a href="#formulario">Contato</a></li>
+                    </ul>
+                </nav>
+            </div><!--menu-mobile-->
+            <div class="overlay-menu" id="overlay-menu">
 
+            </div><!--overlay-menu-->
+        </div><!--Interface-->
     </header>
 
     <main>
@@ -47,9 +66,8 @@
                     <div class="txt-topo-site">
                         <h1>TRANSFORMANDO IDEIAS EM REALIDADE DIGITAL<span>.</span></h1>
                         <p>Criatividade e inovação andam lado a lado. Com uma combinação única de design impactante, funcionalidade intuitiva e otimização para resultados, estou pronto para criar a presença online dos seus sonhos.</p>
-
                         <div class="btn-contato">
-                            <a href="#">
+                            <a href="#formulario">
                                 <button>Entre em contato</button>
                             </a>
                         </div><!--btn-contato-->
@@ -61,7 +79,7 @@
             </div><!--interface-->
         </section><!--topo-do-site-->
 
-        <section class="especialidades">
+        <section class="especialidades" id="especialidades">
             <div class="interface">
                 <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
                 <div class="flex">
@@ -86,8 +104,123 @@
             </div><!--interface-->
         </section><!--especialidades-->
 
+        <section class="sobre" id="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="image/foto.png" alt="">
+                    </div><!--img-sobre-->
+
+                    <div class="txt-sobre">
+                        <h2>MUITO PRAZER, <span>SOU BACOIPSWICH.</span></h2>
+                        <p>BacoIpswich é uma startup de desenvolvimento web que acredita no poder da tecnologia para transformar ideias em realidade. Nossa missão é fornecer soluções digitais personalizadas que ajudem nossos clientes a alcançar seus objetivos online.</p>
+
+                        <p>Nossa equipe é composta por profissionais talentosos e dedicados que trazem uma variedade de habilidades e experiências para a mesa. Trabalhamos juntos para criar sites estáticos, dinâmicos, responsivos, de gerenciamento, e-commerce e educacionais que não apenas atendem, mas superam as expectativas de nossos clientes.</p>
+                        
+                        <p>Além disso, estamos comprometidos em apoiar a próxima geração de desenvolvedores web. Oferecemos oportunidades para estudantes e freelancers aprimorarem suas habilidades, trabalharem em projetos do mundo real e construírem um portfólio impressionante.</p>
+
+                        <p>Na BacoIpswich, acreditamos que o sucesso vem da colaboração, inovação e dedicação incansável à excelência. Estamos sempre buscando novas maneiras de melhorar e expandir nossos serviços para melhor atender às necessidades de nossos clientes.</p> 
+                        <div class="div btn-social">
+                            <a target="_blank" href="https://www.instagram.com/felixfreitasjr/"><button><i class="bi bi-instagram"></i></button></a>
+                            <a target="_blank" href="https://github.com/BacoIpswich"><button><i class="bi bi-github"></i></button></a>
+                            <a target="_blank" href="http://linkedin.com/in/felixfreitasjr"><button><i class="bi bi-linkedin"></i></button></a>
+                        </div><!--btn-social-->
+                    </div><!--txt-sobre-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--sobre-->
+
+        <section class="portfolio" id="portfolio">
+            <div class="interface">
+                <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
+                <div class="flex">
+                    <div class="img-port" style="background-image: url(image/imagem-1.png);">
+                    <div class="overlay">Website</div>
+                </div>
+                    <div class="img-port" style="background-image: url(image/imagem-2.png);">
+                    <div class="overlay">Loja online</div>
+                </div>
+                    <div class="img-port" style="background-image: url(image/imagem-3.png);">
+                    <div class="overlay">Blog</div>
+                </div>
+
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--portfolio-->
+
+        <section class="formulario" id="formulario">
+            <div class="interface">
+                <h2 class="titulo">FALA <span>COMIGO.</span></h2>
+
+                <form id="meuFormulario" method="post">
+                    <input type="text" name="nome" id="nome" placeholder="Seu nome:" required>
+                    <input type="email" name="email" id="email" placeholder="Seu e-mail:" required>
+                    <input type="tel" name="telefone" id="telefone" placeholder="Seu celular:" >
+                    <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem" required></textarea>
+                    <div class="btn-enviar"><button>ENVIAR</button></div>
+                    <!-- <div class="btn-enviar"><input type="submit" value="ENVIAR"></div> -->
+                </form>
+            </div><!--interface-->
+        </section><!--formulario-->
     </main>
 
+    <footer>
+        <div class="interface">
+            <div class="line-footer flex">
+                <div class="logo-footer">
+                    <a href="#inicio"><img src="image/logo (1).png" alt=""></a>
+                </div><!--logo-footer-->
+                <div class="div btn-social">
+                    <a target="_blank" href="https://www.instagram.com/felixfreitasjr/"><button><i class="bi bi-instagram"></i></button></a>
+                    <a target="_blank" href="https://github.com/BacoIpswich"><button><i class="bi bi-github"></i></button></a>
+                    <a target="_blank" href="http://linkedin.com/in/felixfreitasjr
+
+                    "><button><i class="bi bi-linkedin"></i></button></a>
+                </div><!--btn-social-->
+            </div><!--line-footer-->
+            <div class="line-footer bordar">
+                <p><i class="bi bi-envelope-fill"></i> <a href="mailto:bacoipswich@gmail.com">bacoipswich@gmail.com</a></p>
+            </div><!--line-footer-->
+        </div><!--interface-->
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    
+    <script>
+    $(document).ready(function(){
+        // Aplica a máscara ao campo de telefone
+        $('#telefone').mask('(00) 00000-0000');
+    });
+    
+    document.getElementById('meuFormulario').addEventListener('submit', function(e) {
+        e.preventDefault(); // Isso impede que o formulário seja enviado
+    
+        // Pegue os valores dos campos de texto
+        var nome = document.getElementById('nome').value;
+        var email = document.getElementById('email').value;
+        var telefone = document.getElementById('telefone').value;
+        var mensagem = document.getElementById('mensagem').value;
+    
+        // Codifique os valores para uso em uma URL
+        var texto = 'Nome: ' + encodeURIComponent(nome) + '%0A' +
+                    'E-mail: ' + encodeURIComponent(email) + '%0A' +
+                    'Telefone: ' + encodeURIComponent(telefone) + '%0A%0A'  +
+                    'Mensagem: ' + encodeURIComponent(mensagem);
+    
+        // Crie o URL do WhatsApp
+        var urlWhatsApp = "https://wa.me/5521965346906?text=" + texto;
+    
+        // Abra o URL do WhatsApp em uma nova janela
+        window.open(urlWhatsApp);
+
+    // Limpe os campos de entrada
+    document.getElementById('nome').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('telefone').value = '';
+    document.getElementById('mensagem').value = '';
+});
+    </script>
     
 </body>
 </html>
