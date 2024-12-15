@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    text-align: justify;
 }
 
 body{
@@ -170,9 +169,8 @@ section.especialidades .flex{
     margin: 15px 0;
 }
 
-.especialidades li{
-    outline: none;
-    color:#fff
+.especialidades p{
+    text-align: justify;
 }
 
 /* ESTILO DO SOBRE */
