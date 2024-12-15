@@ -170,6 +170,11 @@ section.especialidades .flex{
     margin: 15px 0;
 }
 
+.especialidades li{
+    outline: none;
+    color:#fff
+}
+
 /* ESTILO DO SOBRE */
 section.sobre{
     padding: 80px 4%;
