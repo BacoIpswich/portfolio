@@ -215,6 +215,7 @@ section.sobre{
     cursor: pointer;
     margin: 0 5px;
     transition: 0.2s;
+    text-align: center;
 }
 /* ESTILO PORTFOLIO */
 
