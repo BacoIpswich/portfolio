@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    text-align: justify;
 }
 
 body{
@@ -110,6 +111,7 @@ section.topo-do-site .flex{
     color: #fff;
     font-size: 42px;
     line-height: 40px;
+    text-align: left;
 }
 
 .topo-do-site .txt-topo-site h1 span{
