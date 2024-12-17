@@ -143,6 +143,7 @@ section.especialidades{
 
 section.especialidades .flex{
     gap: 60px;
+    flex-wrap:wrap;
 }
 
 .especialidades .especialidades-box{
@@ -152,6 +153,7 @@ section.especialidades .flex{
     margin-top: 45px;
     transition: .2s;
     cursor: pointer;
+    flex:1 1 30%;
 }
 
 .especialidades .especialidades-box:hover{
